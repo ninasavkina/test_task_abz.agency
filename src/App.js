@@ -1,25 +1,24 @@
 import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import Toolbar from '@mui/material/Toolbar';
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function ButtonAppBar() {
+    return (
+        <div>
+            <div className="Header-style">
+                <div className="container">
+                    <Toolbar>
+                        <div className="App-logo">
+                            <img src={logo}/>
+                        </div>
+                        <div className="btn">
+                            <a className="template-btn go-contact-area">Users</a>
+                            <a className="template-btn go-contact-area">Sing Up</a>
+                        </div>
+                    </Toolbar>
+                </div>
+            </div>
+        </div>
+    );
 }
-
-export default App;
